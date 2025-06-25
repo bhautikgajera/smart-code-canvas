@@ -2,20 +2,20 @@
 
 ## प्रोजेक्ट का नाम: **RNJET**
 
-### मुख्य विशेषताएं (Features):
+### मुख्य विशेषताएं (Features)
 
 1. **QR Code Generation** - `src/screens/QRScreen.js` में QR codes बना सकते हैं
 2. **Barcode Generation** - `src/screens/BarCodeScreen.js` में विभिन्न प्रकार के barcodes बना सकते हैं
 3. **Text Elements** - `src/screens/TextScreen.js` में text elements add कर सकते हैं
 4. **Canvas-based Editor** - `src/screens/HomeScreen.js` में सभी elements को arrange कर सकते हैं
 
-### तकनीकी विवरण:
+### तकनीकी विवरण
 
 **Framework**: React Native (cross-platform mobile app)
 **Navigation**: React Navigation with Stack Navigator
 **Platform Support**: Android और iOS दोनों
 
-### मुख्य Components:
+### मुख्य Components
 
 1. **`HomeScreen`** (`src/screens/HomeScreen.js`) - मुख्य canvas जहाँ सभी elements display होते हैं
 2. **`QRScreen`** (`src/screens/QRScreen.js`) - QR code बनाने के लिए:
@@ -28,7 +28,7 @@
    - Input validation
 4. **`TextScreen`** (`src/screens/TextScreen.js`) - Text elements के लिए
 
-### उपयोग किए गए Libraries:
+### उपयोग किए गए Libraries
 
 - `react-native-qrcode-svg` - QR code generation के लिए
 - `@kichiyaki/react-native-barcode-generator` - Barcode generation के लिए
@@ -36,7 +36,7 @@
 - `react-native-vector-icons` - Icons के लिए
 - `@react-native-community/slider` - Size controls के लिए
 
-### प्रोजेक्ट Structure:
+### प्रोजेक्ट Structure
 
 ```
 RNJET/
@@ -75,21 +75,24 @@ RNJET/
     └── App.test.tsx          # App tests
 ```
 
-### iOS पर चलाने के Steps:
+### iOS पर चलाने के Steps
 
-#### Prerequisites:
+#### Prerequisites
+
 - macOS machine
 - Xcode installed from App Store
 - Node.js और npm installed
 
-#### Installation & Run:
+#### Installation & Run
 
 1. **Dependencies Install करें:**
+
    ```bash
    npm install
    ```
 
 2. **CocoaPods Setup करें:**
+
    ```bash
    bundle install
    cd ios
@@ -98,11 +101,13 @@ RNJET/
    ```
 
 3. **Metro Server Start करें:**
+
    ```bash
    npm start
    ```
 
 4. **iOS App Build और Run करें:**
+
    ```bash
    # Command line से
    npm run ios
@@ -112,7 +117,7 @@ RNJET/
    # Simulator select करें और Run button press करें
    ```
 
-### Troubleshooting:
+### Troubleshooting
 
 अगर कोई issue आए तो:
 
@@ -127,15 +132,16 @@ cd ..
 npx react-native start --reset-cache
 ```
 
-### App Configuration:
+### App Configuration
 
 - **Bundle Identifier**: `com.rnjet`
 - **App Name**: RNJET
 - **Platform Target**: iOS 13.0+, Android API 21+
 
-### Expected Features:
+### Expected Features
 
 सफल installation के बाद app में यह features होंगे:
+
 - QR Code generator with customizable size
 - Multiple barcode format support
 - Text element addition
